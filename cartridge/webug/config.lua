@@ -3,21 +3,18 @@
 -- This document contains information that is proprietary to kolokuz, Inc 
 -- and no part of this source code may be used without explicit permission from kolokuz, Inc.
 --------------------------------------------------------------------------------
--- 게임의 콜백함수인 _init() _update() _draw()를 정의합니다.
+-- 전역에서 사용하는 static 데이터, enum,값 등을 설정하는 모듈입니다.
 --------------------------------------------------------------------------------
+PLAYER = {
+    NO1 = 0,
+    NO2 = 1,
+}
 
-player1 = init_player(64, PLAYER.NO1)
-player2 = init_player(64, PLAYER.NO2)
-
-function _init()
-    cls()
-end
-
-function _update()    
-    player1:update()    
-end
-
-function _draw()
-    cls()
-    player1:draw()
-end
+BTN = {
+    LEFT = 0,
+    RIGHT = 1,
+    UP = 2,
+    DOWN = 3,
+    JUMP = 4,
+    FIRE = 5
+}
