@@ -21,10 +21,10 @@ function init_player(y, play_no)
     end
 
     function player:update()
-        if btn(BTN.LEFT) then self.y -= self.speed end
-        if btn(BTN.RIGHT) then self.y += self.speed end
-        if btn(BTN.DOWN) then self.size -= self.speed end
-        if btn(BTN.UP) then self.size += self.speed end
+        if btn(BTN.LEFT, play_no) then self.y -= self.speed end
+        if btn(BTN.RIGHT, play_no) then self.y += self.speed end
+        if btn(BTN.DOWN, play_no) then self.size -= self.speed end
+        if btn(BTN.UP, play_no) then self.size += self.speed end
     end
 
     return player
