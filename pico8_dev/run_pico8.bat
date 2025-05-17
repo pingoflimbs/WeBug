@@ -11,6 +11,6 @@ set HOMEDIR=%BASEDIR%pico-8\AppData
 set ROOTDIR=%BASEDIR%carts
 set DESKTOPDIR=%BASEDIR%screenshots
 
-start %PICOEXEPATH% -home "%HOMEDIR%" -root_path "%ROOTDIR%" -desktop "%DESKTOPDIR%" -windowed 1 -width 1280 -height 1280 -gif_len 60 -capture_timestamps 1
+start "" "%PICOEXEPATH%" -home "%HOMEDIR%" -root_path "%ROOTDIR%" -desktop "%DESKTOPDIR%" -windowed 1 -width 1280 -height 1280 -gif_len 60 -capture_timestamps 1
 exit
 No newline at end of file
