@@ -10,7 +10,6 @@ set PICOEXEPATH=%BASEDIR%pico-8\pico8.exe
 set HOMEDIR=%BASEDIR%pico-8\AppData
 set ROOTDIR=%BASEDIR%carts
 set DESKTOPDIR=%BASEDIR%screenshots
-set P8PATH=%BASEDIR%carts\webug\webug.p8
 
 start %PICOEXEPATH% -home "%HOMEDIR%" -root_path "%ROOTDIR%" -desktop "%DESKTOPDIR%" -windowed 1 -width 1280 -height 1280 -gif_len 60 -capture_timestamps 1
 exit
