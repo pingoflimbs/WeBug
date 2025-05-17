@@ -1,30 +1,30 @@
 -----------------------------------[디렉토리구조]------------------------------------------
 [pico8_dev]
-    ├─carts	            	    ★★pico8_run.bat 을 실행했을때 기준 폴더
+    ├─carts                             ★★pico8_run.bat 을 실행했을때 기준 폴더
     │
     ├─docs
-    │   ├─api.lua          	                pico8 api 정리
-    │   ├─lua.lua           	                lua 사용법 정리
-    │   ├─pico-8_manual.html            공식 매뉴얼
-    │   └─pico-8_manual_한글.txt        한글 번역한 매뉴얼
+    │   ├─api.lua                       pico8 api 정리
+    │   ├─lua.lua                       lua 사용법 정리
+    │   ├─pico-8_manual.html       공식 매뉴얼
+    │   └─pico-8_manual_한글.txt   한글 번역한 매뉴얼
     │
-    ├─screenshots                           스크린샷 (F1:화면캡쳐, F3,F4:gif녹화시작,종료)
+    ├─screenshots                       스크린샷 (F1:화면캡쳐, F3,F4:gif녹화시작,종료)
     │
-    ├─pico-8                                  pico8 프로그램폴더
+    ├─pico-8                              pico8 프로그램폴더
     │   ├─pico-8_manual.txt              
     │   ├─pico8.exe                      
     │   ├─pico8.dat    
     │   └─SDL2.dll
-    ├─pico8_run.bat                         cartridge폴더기준 pico8 실행
+    ├─pico8_run.bat                      cartridge폴더기준 pico8 실행
     │
-    └─둘러보기.txt	                            <현재파일
-    └─둘러보기_1_오프닝.txt	            
-    └─둘러보기_2_데모.txt	            
-    └─둘러보기_3_게임마켓.txt	
+    └─둘러보기.txt                        <현재파일
+    └─둘러보기_1_오프닝.txt                
+    └─둘러보기_2_데모.txt                
+    └─둘러보기_3_게임마켓.txt    
 
 
 
-
+    
 
 ---------------------------------------[튜토리얼]-------------------------------------------
 #1 오프닝
