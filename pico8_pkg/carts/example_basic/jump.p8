@@ -1,18 +1,30 @@
 pico-8 cartridge // http://www.pico-8.com
-version 42
+speedersion 42
 __lua__
-a={y=100,dy=0}
-grvt=0.8
+
+ground=20 --땅높이
+height=ground --위치
+speed=0		--현재속도
+jumppwr=6 	--위로올라 가는 힘(일시적)
+gravity=1 --아래로 가해지는 힘(지속적)
 function _update()
-	if(btn(🅾️)) then	a.dy=-4 end
-	a.dy += grvt
-	a.y += a.dy
-	if(a.y>100) then a.y=100 end
+	if(btn(4)) then	
+		speed=jumppwr --1.점프로 딱한번 +속도를 가함
+	end 
+	
+	speed -= gravity -- 2.중력은 항상 -속도를 가함
+	
+	height += speed -- 3.매프레임(1/30초) 동안 위치변화
+
+	if(height<=ground) then
+		height=ground -- 4.땅보다 아래로 내려가면 땅에 고정
+		speed=0 -- 5.속도는 0으로 초기화
+	end
 end
 
 function _draw()
 	cls()
-	circ(64,a.y,4,3)
+	circfill(64,128-height,4,3)
 end
 __gfx__
 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
